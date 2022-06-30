@@ -2,7 +2,9 @@ import React from 'react'
 
 function FeatureCard() {
   return (
-    <div>FeatureCard</div>
+    <div>
+      FeatureCard
+    </div>
   )
 }
 
