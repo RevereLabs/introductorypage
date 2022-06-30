@@ -1,0 +1,11 @@
+.button {
+    color: #fff;
+    border-radius: .5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1178D7;
+    box-shadow: 5px 5px 0px 0px #000000;
+    height: 100%;
+  }
