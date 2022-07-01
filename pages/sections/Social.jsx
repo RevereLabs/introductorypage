@@ -2,6 +2,7 @@ import React from 'react'
 import style from '../../styles/Social.module.css'
 import Button from '../../components/Button'
 
+
 function Social() {
   return (
     <div className="w-screen h-screen bg-accent flex flex-col items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem]">

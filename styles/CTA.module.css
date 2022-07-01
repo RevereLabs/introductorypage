@@ -1,0 +1,16 @@
+.Line{
+    background-color:#DBDBDB;
+    width:1px;
+    height:1em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
+
+
+.LineHorizontal{
+    background-color:#494949;
+    width:10em;
+    height:1px;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
