@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
       <NavBar/>
-      <Component {...pageProps}/>
+      <Component {...pageProps} className="bg-accent"/>
     
     </> 
   )

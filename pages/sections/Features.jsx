@@ -16,7 +16,7 @@ function Features() {
         </div>
 
         <span className="text-accent w-[50%] text-center text-[3.6rem] leading-[4.4rem]">Features we provide.
-          <span className="text-main"> Excited?</span>
+          <span className="text-secondary"> Excited?</span>
         </span>
 
         <div className={style.Line} style={{marginBottom:'0'}}></div>
