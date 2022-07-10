@@ -5,7 +5,7 @@ import data from '../../data/processData.json'
 export default function Process() {
   return (
     <>
-      <div className="w-screen h-auto  flex justify-center text-[4.8rem] w-[100%] leading-[4.8rem]">
+      <div id="Process" className="w-screen h-auto  flex justify-center text-[4.8rem] w-[100%] leading-[4.8rem]">
         <div className={style.videoContainer}>
           <video loop autoPlay muted className={style.Video} >
                   <source src={''} type="video/mp4"/>Your browser does not support the video tag.

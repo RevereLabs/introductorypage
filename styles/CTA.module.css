@@ -5,7 +5,13 @@
     margin-top:0.5em;
     margin-bottom:0.5em;
 }
-
+.SocialBtn{
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.SocialBtn:hover{
+    opacity: 0.5;
+}
 
 .LineHorizontal{
     background-color:#494949;
