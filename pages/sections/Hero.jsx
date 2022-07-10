@@ -1,6 +1,5 @@
 import React from 'react'
 import style from '../../styles/Hero.module.css'
-const video = 'public/vid.mp4'
 
 
 function Hero() {
@@ -13,7 +12,7 @@ function Hero() {
 
 
         <video loop autoPlay muted className={style.Video} >
-                <source src='../../public/vid.mp4'/>Your browser does not support the video tag.
+                <source src='vid.mp4'/>Your browser does not support the video tag.
         </video> 
 
         <div className={style.Line}></div>

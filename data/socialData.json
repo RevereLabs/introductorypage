@@ -1,5 +1,32 @@
 [
     {
-        
+        "name":"Rhen",
+        "id":"Blueprint#2302",
+        "pp":"https://cdn.discordapp.com/avatars/726874185095184514/d968faf6cd2cb2491be0974ced161b72.webp?size=128",
+        "review":"Amazing Idea!!!"
+    },
+    {
+        "name":"Emmanuel",
+        "id":"Emmiefroshe#4003",
+        "pp":"https://cdn.discordapp.com/avatars/784182686252007445/9db617ffad6187a7289a3f96ecc7c4e4.webp?size=128",
+        "review":"LFG waiting for the platform"
+    },
+    {
+        "name":"Lacey",
+        "pp":"https://cdn.discordapp.com/avatars/676484051195920405/fd7c5bbc47d238d5c2aab5974ff6e603.webp?size=128",
+        "id":"LaceyK#5854",
+        "review":"Much needed for freelancer economy"
+    },
+    {
+        "name":"Somz",
+        "pp":"https://cdn.discordapp.com/avatars/802786140444426280/808e69b9efb33850c33ffa5096ac45f4.webp?size=128",
+        "id":"Somz#4520",
+        "review":"🔥 should have got this earlier"
+    },
+    {
+        "name":"Dhruv",
+        "pp":"https://cdn.discordapp.com/avatars/547325934043398144/adc0a494589d2ed447cb25c209bd8e0e.webp?size=128",
+        "id":"0xdhruv#1370",
+        "review":"You guys have a bright future, much required idea!"
     }
 ]

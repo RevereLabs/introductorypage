@@ -15,12 +15,12 @@ function Social() {
         <div>
             <Button Content={'Checkout our Discord'} Link={''} />
         </div>
-        <div className="mt-10">
-        {data.map((index, item) =>(
-          <SocialCard/>
+        <div className="mt-10 grid grid-cols-3">
+        {data.map((item, i) =>(
+          <SocialCard Key={i} DiscordName={item.name} DiscordId={item.id} Review={item.comment} ProfilePic={item.pp}/>
         ))}
         </div>
-        <div className={style.Line} style={{marginBottom:'0'}}></div>
+        <div className={style.Line} style={{marginBottom:'0', marginTop:'3em'}}></div>
     </div>
   )
 }
