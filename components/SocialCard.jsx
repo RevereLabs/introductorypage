@@ -13,7 +13,6 @@ function SocialCard({DiscordId, DiscordName, Review, ProfilePic}) {
 
         <p className="mt-5 text-textSecondary">
             {Review}
-            Lorem ipsum dolor sit amet
         </p>
     </div>
   )
