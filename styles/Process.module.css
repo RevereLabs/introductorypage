@@ -1,0 +1,26 @@
+.Video{
+    background-color:#000000;
+    width: 80%;
+    aspect-ratio: 16/9;
+    border-radius:0.4em;
+    
+}
+.CardScroll{
+    width: 40%;
+    height: screen;
+    padding-top: 10vh;
+}
+.CardScroll::-webkit-scrollbar{
+    display: none;
+}
+.videoContainer{
+
+    position: sticky;
+    top:0;
+    width:60%;
+    height:62vh;
+    margin-top:5vh;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+}
