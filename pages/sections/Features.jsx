@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../../styles/Features.module.css'
 import FeatureCard from '../../components/FeatureCard'
-// import  data  from '../../data/featureData.json'
+import  data  from '../../data/featureData.json'
 
 function Features() {
   return (
@@ -9,10 +9,9 @@ function Features() {
 
         <div className={style.Line} style={{marginTop:'0'}}></div>
         <div className="flex">
-            {/* {data.map((item,index) =>(
-                <FeatureCard content={item.content} headingMain={item.headingMain} headingSecondary={item.headingSecondary} height={item.height}/>
-            ))} */}
-            <FeatureCard/>
+            {data.map((item,index) =>(
+                <FeatureCard content={item.Content} headingMain={item.heading} headingSecondary={item.SecondaryHeading} height={item.height}/>
+            ))}
         </div>
 
         <span className="text-accent w-[50%] text-center text-[3.6rem] leading-[4.4rem]">Features we provide.
