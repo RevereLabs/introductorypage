@@ -18,3 +18,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  background:#c3d9ee;
+}
+::-webkit-scrollbar-thumb{
+  background:#2e8de6;
+  box-shadow:1px 4px 0px 0px #000000;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#1169bb;
+}

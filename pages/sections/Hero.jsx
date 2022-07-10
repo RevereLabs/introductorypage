@@ -5,7 +5,7 @@ import style from '../../styles/Hero.module.css'
 function Hero() {
   return (
     <div className="w-screen flex flex-col  items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] mt-20">
-        <span className="text-textMain w-[60%] text-center">India’s first blockchain based escrow service for.
+        <span className="text-textMain w-[50vw] text-center">India’s first blockchain based escrow service for.
           <span className="text-main"> Freelance Payment Management</span>
         </span>
         <div className={style.Line}></div>
