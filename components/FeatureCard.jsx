@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import CardBase from '../public/CardBase.png'
 
 function FeatureCard({height=400, content, headingMain, headingSecondary}) {
