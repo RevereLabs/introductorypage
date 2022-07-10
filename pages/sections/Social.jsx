@@ -1,7 +1,8 @@
 import React from 'react'
 import style from '../../styles/Social.module.css'
 import Button from '../../components/Button'
-
+import SocialCard from '../../components/SocialCard'
+import data from '../../data/socialData.json'
 
 function Social() {
   return (
@@ -14,8 +15,11 @@ function Social() {
         <div>
             <Button Content={'Checkout our Discord'} Link={''} />
         </div>
-
-
+        <div className="mt-10">
+        {data.map((index, item) =>(
+          <SocialCard/>
+        ))}
+        </div>
         <div className={style.Line} style={{marginBottom:'0'}}></div>
     </div>
   )
