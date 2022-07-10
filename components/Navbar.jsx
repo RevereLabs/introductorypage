@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/Image'
 import Button from '../components/Button'
 import Logo from '../public/logo.png'
 import '../pages/_document'
