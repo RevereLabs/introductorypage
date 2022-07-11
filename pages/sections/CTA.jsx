@@ -32,9 +32,9 @@ function CTA() {
         </span>
         
         <input type="text" id="Mail" className='w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)]' placeholder='email Id'></input>
-        <a>
+        <div>
             <Button Content={'Sign up for the news letter'} onClick={ClickHandler} />
-        </a>
+        </div>
 
         <div className="mt-[20vh]">
             <a href="#" className={style.SocialBtn}>
