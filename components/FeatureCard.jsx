@@ -5,7 +5,7 @@ import CardBase from '../public/CardBase.png'
 function FeatureCard({height=400, content, headingMain, headingSecondary}) {
   return (
     <div className="font-mada  relative text-accent m-10">
-
+      
       <div className="absolute top-[10%] z-10 flex flex-col justify-center text-center p-10">
         <span className="font-[600] text-[1.5rem] leading-[1.5rem]">{headingMain} 
           <span className="text-secondary"> {headingSecondary}</span>

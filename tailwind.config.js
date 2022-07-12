@@ -17,6 +17,11 @@ module.exports = {
     fontFamily:{
       mada:['Mada', 'sans-serif'],
     },
+    screens: {
+      'small':{
+        'max':'800px'
+      }
+    },
   },
   plugins: [],
 }
