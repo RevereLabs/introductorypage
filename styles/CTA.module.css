@@ -20,3 +20,13 @@
     margin-top:0.5em;
     margin-bottom:0.5em;
 }
+@media only screen and (max-width:800px) {
+    .SocialBtn{
+        margin-right: 1rem;
+        margin-left:1rem;
+    }
+    .LineHorizontal{
+        width:5rem;
+    }
+    
+}

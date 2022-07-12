@@ -5,20 +5,20 @@ import  data  from '../../data/featureData.json'
 
 function Features() {
   return (
-    <div id="Features" className="w-screen h-screen bg-textMain flex flex-col items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem]">
+    <div id="Features" className="w-screen h-screen bg-textMain flex flex-col justify-between items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto">
 
-        <div className={style.Line} style={{marginTop:'0'}}></div>
-        <div className="flex">
+        <div className={style.Line}></div>
+        <div className="flex small:flex-col">
             {data.map((item,index) =>(
                 <FeatureCard key={index} content={item.Content} headingMain={item.heading} headingSecondary={item.SecondaryHeading} height={item.height}/>
             ))}
         </div>
 
-        <span className="text-accent w-[50%] text-center text-[3.6rem] leading-[4.4rem] ">Features we provide.
+        <span className="text-accent w-[50%] text-center text-[3.6rem] leading-[4.4rem]  small:text-[2rem] small:leading-[2.2rem] small:mb-10">Features we provide.
           <span className="text-secondary"> Excited?</span>
         </span>
 
-        <div className={style.Line} style={{marginBottom:'0', marginTop:'3.2em'}}></div>
+        <div className={style.Line}></div>
     </div>
   )
 }

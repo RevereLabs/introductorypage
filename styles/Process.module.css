@@ -24,3 +24,18 @@
     display:flex;
     justify-content:center;
 }
+
+@media screen and (max-width: 800px) {
+    .videoContainer{
+        display: none;
+    }
+    .Video{
+        display: none;
+    }
+    .CardScroll{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+    }
+}
