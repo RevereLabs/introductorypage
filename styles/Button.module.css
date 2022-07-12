@@ -11,6 +11,7 @@
     height: 100%;
     font-weight: 600;
     font-size:1rem;
+    cursor: pointer;
   }
 
   .button:hover { background-color:#0d67bb}

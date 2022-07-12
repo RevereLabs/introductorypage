@@ -14,7 +14,7 @@ function Navbar() {
              <a href="#Process">Process</a>
              <a href="#CTA">Contact Us</a>
           </div>
-          <Button Content={'Join Discord'} Link={''}/>
+          <Button Content={'Join Discord'} Link={'https://discord.gg/H5ucfBaG'}/>
         </div>
     </>
   )
