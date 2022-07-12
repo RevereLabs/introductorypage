@@ -32,13 +32,13 @@ function CTA() {
         <Button Content='Sign up for the news letter' onClick={ClickHandler} />
 
         <div className="mt-[20vh]">
-            <a href="#" className={style.SocialBtn}>
+            <a href="https://discord.gg/H5ucfBaG" className={style.SocialBtn}>
               <Image src={Discord} width="50" height="50"></Image>
             </a>
-            <a href="#" className={style.SocialBtn}>
+            <a href="https://twitter.com/LabsRevere" className={style.SocialBtn}>
               <Image src={Twitter} width="50" height="50"></Image>
             </a>
-            <a href="#" className={style.SocialBtn}>
+            <a href="https://www.instagram.com/labsrevere/" className={style.SocialBtn}>
               <Image src={Insta} width="50" height="50"></Image>
             </a>
         </div>
