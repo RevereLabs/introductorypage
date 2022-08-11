@@ -20,6 +20,9 @@ module.exports = {
     screens: {
       'small':{
         'max':'800px'
+      },
+      'large':{
+        'min':'800px'
       }
     },
   },

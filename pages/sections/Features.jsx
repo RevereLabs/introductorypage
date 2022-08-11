@@ -5,7 +5,7 @@ import  data  from '../../data/featureData.json'
 
 function Features() {
   return (
-    <div id="Features" className="w-screen h-screen bg-textMain flex flex-col justify-between items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto">
+    <div id="Features" className="h-screen bg-textMain flex flex-col justify-between items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto">
 
         <div className={style.Line}></div>
         <div className="flex small:flex-col">

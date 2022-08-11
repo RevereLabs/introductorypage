@@ -5,6 +5,13 @@
     border-radius:0.4em;
     
 }
+.Line{
+    background-color:#494949;
+    width:1px;
+    height:1em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+}
 .CardScroll{
     width: 40%;
     height: screen;
