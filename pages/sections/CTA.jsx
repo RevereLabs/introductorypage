@@ -22,8 +22,7 @@ function CTA() {
        console.log('FAILED...', error);
     });
   }
-  return (<div id='CTA' className=" relative h-screen bg-textMain flex flex-col items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto"
-    >
+  return (<div id='CTA' className=" relative h-screen bg-textMain flex flex-col items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto">
 
         <div className={style.Line} style={{marginTop:'0'}}></div>
 
@@ -45,10 +44,10 @@ function CTA() {
               <Image src={Insta} width="50" height="50"></Image>
             </a>
         </div>
-          <div className="absolute right-0 ">
+          <div className="absolute right-0 small:hidden">
             <Image src={'/left.png'} width={400} height={600}/>
           </div>
-          <div className="absolute left-0 bottom-[10rem]">
+          <div className="absolute left-0 bottom-[10rem] small:hidden">
             <Image src={'/right.png'} width={400} height={600}/>
           </div>
         <div className={style.LineHorizontal}></div>
