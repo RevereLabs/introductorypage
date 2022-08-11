@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ["cdn.discordapp.com"]
+    domains: ["cdn.discordapp.com"],
     loader: 'akamai',
 
   },
