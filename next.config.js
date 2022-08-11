@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: ["cdn.discordapp.com"],
     loader: 'akamai',
+    path: '',
 
   },
 }
