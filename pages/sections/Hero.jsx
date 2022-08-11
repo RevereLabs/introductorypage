@@ -4,7 +4,7 @@ import style from '../../styles/Hero.module.css'
 
 function Hero() {
   return (
-    <div id="Hero" className="w-screen flex flex-col  items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] mt-20 small:text-[2rem] small:leading-[2.2rem] small:mt-5">
+    <div id="Hero" className="flex flex-col  items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] mt-20 small:text-[2rem] small:leading-[2.2rem] small:mt-5">
         <span className="text-textMain w-[50vw] text-center small:w-[80vw]">India’s first blockchain based escrow service for.
           <span className="text-main"> Freelance Payment Management</span>
         </span>

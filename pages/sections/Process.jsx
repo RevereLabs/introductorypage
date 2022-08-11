@@ -6,7 +6,7 @@ import data from '../../data/processData.json'
 export default function Process() {
   return (
     <>
-      <div id="Process" className="w-screen h-auto  flex justify-center text-[4.8rem] w-[100%] leading-[4.8rem] small:flex-col small:justfy-center ">
+      <div id="Process" className="h-auto  flex justify-center text-[4.8rem] w-[100%] leading-[4.8rem] small:flex-col small:justfy-center ">
         
         <div className={style.videoContainer}>
           <video loop autoPlay muted className={style.Video}>
