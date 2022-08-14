@@ -11,7 +11,6 @@ import emailjs from '@emailjs/browser'
 function CTA() {
   const[email,setEmail] = useState('');
   const ClickHandler = () =>{
-    console.log('poop')
     var templateParams = {
       to_name: email
     }
@@ -35,20 +34,20 @@ function CTA() {
 
         <div className="mt-[20vh] small:mt-0">
             <a href="https://discord.gg/8aA2Xuhm" className={style.SocialBtn}>
-              <Image src={Discord} width="50" height="50"></Image>
+              <Image src={Discord} width="50" height="50"  alt={"revere labs "}></Image>
             </a>
             <a href="https://twitter.com/RevereLabs" className={style.SocialBtn}>
-              <Image src={Twitter} width="50" height="50"></Image>
+              <Image src={Twitter} width="50" height="50" alt={"revere labs "}></Image>
             </a>
             <a href="https://www.instagram.com/labsrevere/" className={style.SocialBtn}>
-              <Image src={Insta} width="50" height="50"></Image>
+              <Image src={Insta} width="50" height="50" alt={"revere labs "}></Image>
             </a>
         </div>
           <div className="absolute right-0 small:hidden">
-            <Image src={'/left.png'} width={400} height={600}/>
+            <Image src={'/left.png'} width={400} height={600} alt={"revere labs "}/>
           </div>
           <div className="absolute left-0 bottom-[10rem] small:hidden">
-            <Image src={'/right.png'} width={400} height={600}/>
+            <Image src={'/right.png'} width={400} height={600} alt={"revere labs "}/>
           </div>
         <div className={style.LineHorizontal}></div>
 
@@ -56,4 +55,4 @@ function CTA() {
   )
 }
 
-export default CTA
+export default CTA;
