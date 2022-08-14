@@ -16,19 +16,21 @@ function CTA() {
 
   const ClickHandler = async () =>{
 
-    let data={name:name,email:email,comment:review};
-    let userComments = await axios.post('http://www.reverelabs.org/api/addData',data)
-
-    console.log('poop')
+    
+    console.log('sending mail now')
     var templateParams = {
       to_name: email
     }
-    emailjs.send('service_j68hmon', 'template_484nbkj', templateParams,'6HGQvyzipY4qgGkWm')
+    await emailjs.send('service_j68hmon', 'template_484nbkj', templateParams,'6HGQvyzipY4qgGkWm')
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+      console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
-       console.log('FAILED...', error);
+      console.log('FAILED...', error);
     });
+
+    console.log('adding comment now')
+    let data={name:name,email:email,comment:review};
+    let userComments = await axios.post('https://reverelabs.org/api/addData',data)
   }
 
 
