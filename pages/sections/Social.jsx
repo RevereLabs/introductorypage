@@ -17,7 +17,7 @@ function Social() {
         </div>
         <div className="mt-10 grid grid-cols-3 small:grid-cols-1">
         {data.map((item, i) =>(
-          <SocialCard key={i} DiscordName={item.name} DiscordId={item.id} Review={item.review} ProfilePic={item.pp}/>
+          <SocialCard key={i} Name={item.name} Id={item.id} Review={item.review} ProfilePic={item.pp}/>
         ))}
         </div>
         <div className={style.Line}></div>

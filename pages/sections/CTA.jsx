@@ -5,12 +5,20 @@ import Image from 'next/image'
 import Discord from '../../public/Discord.png'
 import Twitter from '../../public/Twitter.png'
 import Insta from '../../public/Insta.png'
-import emailjs from '@emailjs/browser'
-
+import emailjs from '@emailjs/browser' 
+import axios from 'axios'
 
 function CTA() {
   const[email,setEmail] = useState('');
-  const ClickHandler = () =>{
+  const[name,setName] = useState('');
+  const[review,setReview] = useState('');
+
+
+  const ClickHandler = async () =>{
+
+    let data={name:name,email:email,comment:review};
+    let userComments = await axios.post('http://www.reverelabs.org/api/addData',data)
+
     console.log('poop')
     var templateParams = {
       to_name: email
@@ -22,6 +30,8 @@ function CTA() {
        console.log('FAILED...', error);
     });
   }
+
+
   return (<div id='CTA' className=" relative h-screen bg-textMain flex flex-col items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto">
 
         <div className={style.Line} style={{marginTop:'0'}}></div>
@@ -31,6 +41,8 @@ function CTA() {
         </span>
         
         <input type="text" id="Mail" className='rounded-lg w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)] small:w-[60vw]' placeholder=' Email Id' value={email} onChange={e => setEmail(e.target.value)}></input>
+        <input type="text" id="Name" className='rounded-lg w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)] small:w-[60vw]' placeholder=' Name' value={name} onChange={e => setName(e.target.value)}></input>
+        <input type="text" id="Review" className='rounded-lg w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)] small:w-[60vw]' placeholder=' Your Thoughts' value={review} onChange={e => setReview(e.target.value)}></input>
         <Button Content='Sign up for the news letter' onClick={ClickHandler} />
 
         <div className="mt-[20vh] small:mt-0">
@@ -57,3 +69,4 @@ function CTA() {
 }
 
 export default CTA
+
