@@ -18,7 +18,7 @@ function Community({data}) {
 
 export async function getServerSideProps() {
     let data;
-    let userComments = await axios.get('http://www.reverelabs.org/api/getData').then((d)=>(data=d.data));
+    let userComments = await axios.get('https://www.reverelabs.org/api/getData').then((d)=>(data=d.data));
     console.log(data)
     return {props: {data}};
 }
