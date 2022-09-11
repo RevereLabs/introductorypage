@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from '../components/Button'
-import Logo from '../public/logo.png'
+import Button from './Button'
 import '../pages/_document'
 import Image from 'next/image'
 import Link from 'next/link'

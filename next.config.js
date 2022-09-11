@@ -2,10 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ["cdn.discordapp.com"],
+    domains: ["www.pngitem.com","cdn.discordapp.com"],
     loader: 'akamai',
     path: '',
-
   },
 }
 
