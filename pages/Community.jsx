@@ -1,11 +1,14 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React, {useEffect, useState} from "react";
 import SocialCard from '../components/SocialCard'
 import axios from 'axios'
 
 
 
-function Community({data}) {
+function Community() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get('https://reverelabs.org/api/getData').then((d)=>(setData(d.data)));
+  }, []);
 
   return (
     <>
@@ -15,13 +18,5 @@ function Community({data}) {
     </>
   )
 }
-
-export async function getServerSideProps() {
-    let data;
-    await axios.get('https://reverelabs.org/api/getData').then((d)=>(data=d.data));
-    console.log(data)
-    return {props: {data}};
-}
-
 
 export default Community
