@@ -2,7 +2,7 @@ name: "Build introductory app"
 on: push
 jobs:
   build:
-    name: "Build introductory app"
+    name: "Export introductory app"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,4 +15,4 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn build
+      - run: yarn export
