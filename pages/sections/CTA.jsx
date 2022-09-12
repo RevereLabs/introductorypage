@@ -6,21 +6,34 @@ import Discord from '../../public/Discord.png'
 import Twitter from '../../public/Twitter.png'
 import Insta from '../../public/Insta.png'
 import emailjs from '@emailjs/browser'
-
+import axios from 'axios'
 
 function CTA() {
   const[email,setEmail] = useState('');
-  const ClickHandler = () =>{
+  const[name,setName] = useState('');
+  const[review,setReview] = useState('');
+
+
+  const ClickHandler = async () =>{
+
+
+    console.log('sending mail now')
     var templateParams = {
       to_name: email
     }
-    emailjs.send('service_j68hmon', 'template_484nbkj', templateParams,'6HGQvyzipY4qgGkWm')
+    await emailjs.send('service_j68hmon', 'template_484nbkj', templateParams,'6HGQvyzipY4qgGkWm')
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+      console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
-       console.log('FAILED...', error);
+      console.log('FAILED...', error);
     });
+
+    console.log('adding comment now')
+    let data={name:name,email:email,comment:review};
+    let userComments = await axios.post('https://reverelabs.org/api/addData',data)
   }
+
+
   return (<div id='CTA' className=" relative h-screen bg-textMain flex flex-col items-center font-mada font-[900] text-[4.8rem] w-[100%] leading-[4.8rem] small:h-auto">
 
         <div className={style.Line} style={{marginTop:'0'}}></div>
@@ -28,8 +41,10 @@ function CTA() {
         <span className="text-accent w-[50%] text-center text-[3.6rem] leading-[4.4rem] mt-0 small:text-[2rem] small:leading-[2.2rem]">Launching soon at your
           <span className="text-main"> nearest browser!</span>
         </span>
-        
+
         <input type="text" id="Mail" className='rounded-lg w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)] small:w-[60vw]' placeholder=' Email Id' value={email} onChange={e => setEmail(e.target.value)}></input>
+        <input type="text" id="Name" className='rounded-lg w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)] small:w-[60vw]' placeholder=' Name' value={name} onChange={e => setName(e.target.value)}></input>
+        <input type="text" id="Review" className='rounded-lg w-[20vw] h-[4vh] font-[500] text-[1.5rem] mt-10 drop-shadow-[5px_5px_0px_rgba(0,0,0,0.25)] small:w-[60vw]' placeholder=' Your Thoughts' value={review} onChange={e => setReview(e.target.value)}></input>
         <Button Content='Sign up for the news letter' onClick={ClickHandler} />
 
         <div className="mt-[20vh] small:mt-0">
@@ -55,4 +70,6 @@ function CTA() {
   )
 }
 
-export default CTA;
+export default CTA
+
+;

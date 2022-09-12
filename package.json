@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.2",
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
