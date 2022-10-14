@@ -12,7 +12,7 @@ function FeatureCard({height=400, content, headingMain, headingSecondary}) {
         </span>
         <span className="font-[400] text-[1rem] leading-[1.5em] mt-10">{content}</span>
       </div>
-      <Image src={CardBase} height={height} width={'300'} />
+      <Image src={CardBase} height={height} width={'300'} alt={"revere labs "} />
     </div>
   )
 }
