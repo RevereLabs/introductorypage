@@ -15,7 +15,7 @@ function Navbar() {
              <Link href="#Features">Features</Link>
              <Link href="#Process">Process</Link>
              <Link href="#Backing">Backing</Link>
-             <Link href="/Community">Community</Link>
+             {/* <Link href="/Community">Community</Link> */}
              <Link href="#CTA">Contact Us</Link>
           </div>
           <Button Content={'Join Discord'} Link={'https://discord.gg/8aA2Xuhm'}/>
