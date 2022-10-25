@@ -18,7 +18,7 @@ function Navbar() {
              {/* <Link href="/Community">Community</Link> */}
              <Link href="#CTA">Contact Us</Link>
           </div>
-          <Button Content={'Join Discord'} Link={'https://discord.gg/8aA2Xuhm'}/>
+          <Button Content={'Join Discord'} Link={'https://discord.gg/YUMqXbMrc8'}/>
         </div>
     </>
   )

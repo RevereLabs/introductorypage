@@ -13,7 +13,7 @@ function Social() {
           <span className="text-main"> EveryDay!</span>
         </span>
         <div>
-            <Button Content={'Checkout our Discord'} Link={'https://discord.gg/8aA2Xuhm'} />
+            <Button Content={'Checkout our Discord'} Link={'https://discord.gg/YUMqXbMrc8'} />
         </div>
         <div className="mt-10 grid grid-cols-3 small:grid-cols-1">
         {data.map((item, i) =>(
